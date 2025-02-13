@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রমজান ২০২৫ - দিনাজপুর</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class=" ">
+    <div class="navbar">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl">আলহামদুলিল্লাহ ব্লাড ডোনেশন গ্রুপ</a>
+        </div>
+        <div class="flex-none gap-2">
+            <div class="form-control">
+            <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+            </div>
+            <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                        <img
+                            alt="Tailwind CSS Navbar component"
+                            src="http://ibrahimbd.infy.uk/wp-content/uploads/2025/01/unnamed-1.png" />
+                            <!-- src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" /> -->
+                    </div>
+                </div>
+                <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li>
+                    <a class="justify-between">
+                        Profile
+                        <span class="badge">New</span>
+                    </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="">
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+
+    <div class=" flex items-center  justify-center min-h-screen hind-siliguri-bold">
+        <div class="bg-gradient-to-r from-blue-600 to-purple-700 text-white rounded-lg shadow-lg p-6 w-96 text-center">
+            <h1 class=" mb-2 noto">রমজান ২০২৫</h1>
+            <h2 class="text-xl font-semibold mb-4">দিনাজপুর জেলা</h2>
+    
+            <!-- Live watch -->
+            <div class="bg-white text-blue-600 py-2 px-4 rounded-lg shadow-md mb-4 text-lg font-bold">
+                <span id="clock">00:00:00 AM</span>
+            </div>
+    
+            <!-- Ramadan day information -->
+            <div class="bg-white text-gray-800 p-4 rounded-lg shadow-md">
+                <h3 class=" mb-2  p-2 gradient-text1 rounded-lg shadow-md noto-2">রমজান <span id="ramadan-day">১</span></h3>
+                <p><strong>তারিখ:</strong> <span id="date">২ মার্চ</span></p>
+                <p><strong>বার:</strong> <span id="day">রবিবার</span></p>
+                <p class="text-blue-600 font-bold">সেহরির শেষ সময়: <span id="sehri">৫:১২ AM</span></p>
+                <p class="text-red-600 font-bold">ইফতারের সময়: <span id="iftar">৬:০৮ PM</span></p>
+            </div>
+    
+            <!-- Countdown -->
+            <div class="mt-4">
+                <p class="text-yellow-300 text-lg font-semibold">ইফতারের জন্য বাকি: <span id="countdown-iftar">...</span></p>
+                <p class="text-green-300 text-lg font-semibold mt-2">সেহরির জন্য বাকি: <span id="countdown-sehri">...</span></p>
+            </div>
+    
+            <!-- Button -->
+            <div class="flex justify-between mt-4">
+                <button onclick="prevDay()" class="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-600">← আগের দিন</button>
+                <button onclick="nextDay()" class="bg-gray-800  text-white px-4 py-2 rounded hover:bg-gray-600">পরের দিন →</button>
+            </div>
+    
+            <p class="text-sm text-gray-300 mt-4">&copy; ২০২৫ <a href="https://www.facebook.com/md.ibrahim.40531" target="_blank">ইব্রাহিম</a>, দিনাজপুর</p>
+        </div>
+        <div id="welcome" class="welcome-wrapper">
+            <div class="welcome-message">
+                <img src="http://ibrahimbd.infy.uk/wp-content/uploads/2025/01/unnamed-1.png" alt="Welcome Image" class="welcome-image">
+                <p class="text-3xl font-semibold">স্বাগতম আমাদের ওয়েবসাইটে!</p>
+                <p class="mt-4">আমরা খুশি যে আপনি এখানে এসেছেন।</p>
+            </div>
+        </div>
+    </div>
+<script src="javascript.js"></script>
+</body>
+</html>
